@@ -15,28 +15,23 @@ The empirical approach is built around the null hypothesis that the pairs do not
 
 Key result: All pairs aree highly correlated and cointegration is confirmed
 
-## Pairwise Stationarity Analysis
+# Normalised Spreads Preliminary Analysis
 
-The project also applies ADF and KPSS tests to the spread series. ADF tests the null of a unit root (non-stationarity), while KPSS tests the null of stationarity. Taken together, these tests help distinguish between a temporary mispricing process and a genuinely stable spread relationship. If the ADF rejects non-stationarity and the KPSS fails to reject stationarity, the evidence is consistent with a mean-reverting spread that can be normalized with z-scores and traded systematically. Conversely, if both tests point away from stationarity, the spread may not offer a robust arbitrage signal.
-
-![Stationarity Analysis Plots](https://github.com/ayodeji-0/Tokenized-Gold-Stat-Arb/blob/main/stationarity_plots_white.png)
-
-# EDA, Normalised Spread analysis
-
-
-### Correlation and cointegration
-
-![Correlation / cointegration matrix](corr-coint-matrices_black.png)
-
-![Correlation / cointegration matrix (white theme)](corr-coint-matrices_white.png)
-
-### Spread and z-score analysis
+Visual check for mean reversion properties confirms spreads oscillate around some level.
 
 ![Spread and z-score plot](spread_bspread_zscore_plot.png)
 
 ![Spread and z-score plot (black theme)](spread_bspread_zscore_plot_black.png)
 
 ![Spread and z-score plot (white theme)](spread_bspread_zscore_plot_white.png)
+
+## Pairwise Stationarity Analysis
+
+Applying ADF and KPSS tests to the spread series help confirm this visual check as statistically significant properties. ADF tests the null of a unit root (non-stationarity), while KPSS tests the null of stationarity. Taken together, these tests help distinguish between a temporary mispricing process and a genuinely stable spread relationship. If the ADF rejects non-stationarity and the KPSS fails to reject stationarity, the evidence is consistent with a mean-reverting spread that can be normalized with z-scores and traded systematically. Conversely, if both tests point away from stationarity, the spread may not offer a robust arbitrage signal.
+
+![Stationarity Analysis Plots](https://github.com/ayodeji-0/Tokenized-Gold-Stat-Arb/blob/main/stationarity_plots_white.png)
+
+
 
 ### Stationarity and threshold diagnostics
 
